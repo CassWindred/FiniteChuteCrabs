@@ -1,2 +1,4 @@
 C:\Users\firef\AppData\LocalLow\Freehold Games\CavesOfQud\Mods\FiniteChuteCrabs\obj\Debug\FiniteChuteCrabs.csprojAssemblyReference.cache
 C:\Users\firef\AppData\LocalLow\Freehold Games\CavesOfQud\Mods\FiniteChuteCrabs\obj\Debug\FiniteChuteCrabs.csproj.CoreCompileInputs.cache
+C:\Users\firef\Documents\!Projects\FiniteChuteCrabsRepo\obj\Debug\FiniteChuteCrabs.csprojAssemblyReference.cache
+C:\Users\firef\Documents\!Projects\FiniteChuteCrabsRepo\obj\Debug\FiniteChuteCrabs.csproj.CoreCompileInputs.cache

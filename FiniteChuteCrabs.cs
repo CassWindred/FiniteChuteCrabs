@@ -3,7 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 using XRL;
 using XRL.Core;
 using XRL.Messages;
@@ -29,8 +28,8 @@ namespace FiniteChuteCrabs.HarmonyPatches
             static bool Prefix(WalltrapCrabs __instance)
             {
                 String trapid = __instance.ParentObject.id;
-                MessageQueue.AddPlayerMessage($"Prefixing crabtrap {__instance.ParentObject.id}");
-                MessageQueue.AddPlayerMessage($"Dictionary Contains: {CrabTraps.Count} crabtraps");
+                //MessageQueue.AddPlayerMessage($"Prefixing crabtrap {__instance.ParentObject.id}");
+                //MessageQueue.AddPlayerMessage($"Dictionary Contains: {CrabTraps.Count} crabtraps");
                 if (CrabTraps.ContainsKey(trapid))
                 {
                     //MessageQueue.AddPlayerMessage($"Running Prefix on a crab trap with {CrabTraps[__instance][0]} crabs spawned out of {CrabTraps[__instance][1]}");
@@ -64,10 +63,10 @@ namespace FiniteChuteCrabs.HarmonyPatches
         public override void SaveData(SerializationWriter Writer)
         {
             List<string> keys = CrabTraps.Keys.ToList<string>();
-            UnityEngine.Debug.Log($"Saving Keys:\n{keys}");
+            //UnityEngine.Debug.Log($"Saving Keys:\n{keys}");
 
             List<List<int>> values = CrabTraps.Values.ToList<List<int>>();
-            UnityEngine.Debug.Log($"Saving Values:\n{values}");
+            //UnityEngine.Debug.Log($"Saving Values:\n{values}");
 
             Writer.Write(keys);
             Writer.Write(values);
@@ -82,11 +81,11 @@ namespace FiniteChuteCrabs.HarmonyPatches
 
             List<string> keys = Reader.ReadList<string>();
             List<List<int>> values = Reader.ReadList<List<int>>();
-            UnityEngine.Debug.Log($"Loading Keys:\n{keys}");
+            //UnityEngine.Debug.Log($"Loading Keys:\n{keys}");
 
-            UnityEngine.Debug.Log($"Loading Values:\n{values}");
+            //UnityEngine.Debug.Log($"Loading Values:\n{values}");
             CrabTraps = keys.Zip(values, (k, v) => new { k, v }).ToDictionary(x => x.k, x => x.v);
-            UnityEngine.Debug.Log($"Loaded Dictionary:\n{CrabTraps}");
+            //UnityEngine.Debug.Log($"Loaded Dictionary:\n{CrabTraps}");
 
             base.LoadData(Reader);
         }

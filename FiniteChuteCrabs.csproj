@@ -43,6 +43,12 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>I:\SteamGames\steamapps\common\Caves of Qud\CoQ_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>I:\SteamGames\steamapps\common\Caves of Qud\CoQ_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FiniteChuteCrabs.cs" />
@@ -54,8 +60,8 @@
     <None Include=".vs\VSWorkspaceState.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\Documents\!Projects\QudDecompiled\QudDecompiled.csproj">
-      <Project>{dc730f14-c392-43d3-bf5d-3c116a96d64e}</Project>
+    <ProjectReference Include="..\QudDecompiled\QudDecompiled.csproj">
+      <Project>{e98885d6-d068-4732-b84e-ce3705ad8ede}</Project>
       <Name>QudDecompiled</Name>
     </ProjectReference>
   </ItemGroup>

@@ -4,11 +4,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiniteChuteCrabs", "FiniteChuteCrabs.csproj", "{BA4C0864-93BE-4CB1-8F04-4FCC5E76D638}"
-	ProjectSection(ProjectDependencies) = postProject
-		{DC730F14-C392-43D3-BF5D-3C116A96D64E} = {DC730F14-C392-43D3-BF5D-3C116A96D64E}
-	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QudDecompiled", "..\..\..\..\..\..\Documents\!Projects\QudDecompiled\QudDecompiled.csproj", "{DC730F14-C392-43D3-BF5D-3C116A96D64E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QudDecompiled", "..\QudDecompiled\QudDecompiled.csproj", "{E98885D6-D068-4732-B84E-CE3705AD8EDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +17,10 @@ Global
 		{BA4C0864-93BE-4CB1-8F04-4FCC5E76D638}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA4C0864-93BE-4CB1-8F04-4FCC5E76D638}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA4C0864-93BE-4CB1-8F04-4FCC5E76D638}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC730F14-C392-43D3-BF5D-3C116A96D64E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC730F14-C392-43D3-BF5D-3C116A96D64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC730F14-C392-43D3-BF5D-3C116A96D64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC730F14-C392-43D3-BF5D-3C116A96D64E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E98885D6-D068-4732-B84E-CE3705AD8EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98885D6-D068-4732-B84E-CE3705AD8EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E98885D6-D068-4732-B84E-CE3705AD8EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98885D6-D068-4732-B84E-CE3705AD8EDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
