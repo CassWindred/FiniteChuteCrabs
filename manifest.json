@@ -1,0 +1,10 @@
+{
+	"id": "FiniteChuteCrabs",
+	"loadorder": 10,
+	"title": "{{bright grey|Finite Chute Crabs}}",
+	"description": "Tethers Chute Crabs to the basic laws of entropy and thermodynamics by preventing them from spawning infinitely!\n\nMod by Fyrefly.",
+	"tags": "Script, Chute Crabs",
+	"version": "1.0",
+	"author": "Fyrefly/gendingmachine",
+	"previewImage": "FiniteChuteCrabs.png"
+}
