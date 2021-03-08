@@ -20,13 +20,14 @@ namespace FiniteChuteCrabs.HarmonyPatches
         [HarmonyPatch(typeof(WalltrapCrabs), "SpawnCrab")]
         class FiniteCrabsFireEventPatch
         {
-            static int MaximumCrabs = 40; //The Maximum Number of Crabs that can be spawned by any trap
+            static int MaximumCrabs = System.Convert.ToInt32(XRL.UI.Options.GetOption("OptionMaximumCrab")); //The Maximum Number of Crabs that can be spawned by any trap
                                           //A dictionary mapping crab traps ids to an array that represents crabs 
                                           // spawned/maximum crabs for that spawner
 
             static Random rand = new Random();
             static bool Prefix(WalltrapCrabs __instance)
             {
+                MessageQueue.AddPlayerMessage($"Maximum Crab: {MaximumCrabs}");
                 String trapid = __instance.ParentObject.id;
                 //MessageQueue.AddPlayerMessage($"Prefixing crabtrap {__instance.ParentObject.id}");
                 //MessageQueue.AddPlayerMessage($"Dictionary Contains: {CrabTraps.Count} crabtraps");

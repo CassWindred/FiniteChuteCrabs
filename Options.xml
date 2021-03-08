@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<options>
+	<option ID="OptionMaximumCrab" DisplayText="Maximum Chute Crabs Per Chute" Category="Finite Chute Crabs" Type="Combo" Values="5,20,40,60,80,120,360" Default="20"></option>
+</options>
